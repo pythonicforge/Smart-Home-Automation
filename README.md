@@ -44,7 +44,7 @@ This project was built and tested in **TinkerCAD**. You can view or modify the s
 - Implement **relay modules** for real-world appliance control  
 - Integrate **IoT connectivity** for remote monitoring & control  
 <br/>
----
+
 <br/>
 <p align="center">
 <i>Made with ❤️ by Hardik Jaiswal</i> <br>
