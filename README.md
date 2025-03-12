@@ -1,26 +1,30 @@
-# 🌟 _Smart Home Automation with LDR & Temperature Sensor_
+# 🌟 _Smart Home Automation with LDR, Temperature Sensor & LCD Display_  
 
-This project demonstrates a simple **Smart Home Automation system** using an **LDR (Light Dependent Resistor)** and a **TMP36 Temperature Sensor** to control an **LED (for automatic night lighting)** and a **fan (for temperature-based cooling).**  
+This project showcases a **Smart Home Automation System** using an **LDR (Light Dependent Resistor), TMP36 Temperature Sensor, and a 16x2 I2C LCD Display** to control an **LED (automatic night lighting), a fan (temperature-based cooling), and display real-time sensor readings.**  
 
 ### 🚀 Features  
-✅ Automatic night light using an LDR  
-✅ Temperature-based fan control using a TMP36 sensor  
-✅ Real-time sensor readings displayed via Serial Monitor  
-✅ Adjustable threshold values for customization  
+✅ **Automatic night light** using an LDR  
+✅ **Temperature-based fan control** with a TMP36 sensor  
+✅ **Live sensor readings displayed on a 16x2 LCD**  
+✅ **Real-time debugging via Serial Monitor**  
+✅ Adjustable threshold values for **customization**  
 
 ### 🔧 Components Used  
 - **LDR (Photoresistor)** – Detects ambient light levels  
 - **TMP36 Temperature Sensor** – Measures surrounding temperature  
-- **LED** – Turns on when it's dark  
+- **16x2 I2C LCD Display** – Shows live sensor readings  
+- **LED** – Turns on when it’s dark  
 - **Fan (Motor)** – Activates when temperature crosses a set threshold  
 - **Arduino UNO R3** – Microcontroller to process inputs and control outputs  
 - **Resistors & Wires** – For circuit connections  
+- **I2C Module** – Enables LCD communication with fewer pins  
 
 ### 📜 Code Explanation  
-- Reads LDR and temperature sensor values using **analogRead()**  
-- Maps and processes sensor values for **LED & Fan control**  
-- Uses **digitalWrite()** to toggle the LED and fan based on thresholds  
-- Displays sensor readings in **Serial Monitor** for real-time debugging  
+- Reads **LDR & temperature sensor values** using `analogRead()`  
+- Maps & processes sensor values for **LED & Fan control**  
+- Displays sensor data on **LCD using I2C communication**  
+- Uses **digitalWrite()** to toggle LED & Fan based on thresholds  
+- Outputs real-time readings via **Serial Monitor**  
 
 ### 🔌 Circuit Connections  
 | Component | Arduino Pin |
@@ -29,20 +33,32 @@ This project demonstrates a simple **Smart Home Automation system** using an **L
 | TMP36     | A1         |
 | LED       | 9          |
 | Fan       | 5          |
+| LCD (SDA) | A4         |
+| LCD (SCL) | A5         |
 
-### 📸 Simulation  
-This project was built and tested in **TinkerCAD**. You can view or modify the simulation here: [🔗 TinkerCAD Link](https://www.tinkercad.com/things/1syJ0ihAiga-smart-light-and-fan-automation?sharecode=nxrHhSjw3-JQ8oMcYJHdpOPWFktW9LUOS0673Uy2-4E)  
+### 📺 LCD Display Output  
+The **16x2 LCD screen** will display:  
+```
+Temp: 26.4°C   
+Light: 540 LUX  
+```
 
 ### 🎯 How to Use  
-1. Upload the code to your Arduino  
-2. Adjust **lightThreshold** and **tempThreshold** if needed  
-3. Open **Serial Monitor** to view real-time sensor readings  
-4. Observe the LED and Fan operate automatically based on environmental conditions  
+1. **Upload the code** to your Arduino  
+2. Adjust **lightThreshold** & **tempThreshold** if needed  
+3. Open **Serial Monitor** for debugging  
+4. **Observe** the LCD displaying real-time sensor values  
+5. Watch the **LED & Fan operate automatically** based on environmental conditions  
 
-### 📌 Future Improvements  
-- Add **OLED/LCD display** for better UI  
-- Implement **relay modules** for real-world appliance control  
-- Integrate **IoT connectivity** for remote monitoring & control  
+### 📸 Simulation  
+This project was built and tested in **TinkerCAD**. View or modify the simulation here:  
+[🔗 TinkerCAD Link](https://www.tinkercad.com/things/1syJ0ihAiga-smart-light-and-fan-automation?sharecode=nxrHhSjw3-JQ8oMcYJHdpOPWFktW9LUOS0673Uy2-4E)  
+
+## 📌 Future Improvements  
+- **Add a DHT11 sensor** for humidity monitoring  
+- **Integrate IoT connectivity** for remote monitoring & control  
+- **Use relay modules** for real-world appliance control  
+- **Upgrade LCD to an OLED display** for better readability  
 <br/>
 
 <br/>
@@ -51,3 +67,8 @@ This project was built and tested in **TinkerCAD**. You can view or modify the s
 <i>Exploring Embedded Systems & Smart Automation! 🚀</i>
 </p>
 
+<br/>
+<p align="center">
+<i>Made with ❤️ by Hardik Jaiswal</i> <br>
+<i>Exploring Embedded Systems & Smart Automation! 🚀</i>
+</p>
