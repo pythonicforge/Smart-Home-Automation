@@ -66,9 +66,3 @@ This project was built and tested in **TinkerCAD**. View or modify the simulatio
 <i>Made with ❤️ by Hardik Jaiswal</i> <br>
 <i>Exploring Embedded Systems & Smart Automation! 🚀</i>
 </p>
-
-<br/>
-<p align="center">
-<i>Made with ❤️ by Hardik Jaiswal</i> <br>
-<i>Exploring Embedded Systems & Smart Automation! 🚀</i>
-</p>
